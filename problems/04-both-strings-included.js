@@ -4,13 +4,15 @@ and two strings as parameters (for a total of 3 parameters). The function
 should return true if both strings are found in the sentence, otherwise
 it should return false.
 */
-
+function bothStringsIncluded(str1, str2, str3) {
+    return str1.includes(str2) && str1.includes(str2)
+}
 // Your code here 
 
-// console.log(bothStringsIncluded("how now brown cow?", "panther", "cow"));  //=> false
-// console.log(bothStringsIncluded("Dance party!", "Dance", "party"));        //=> true
-// console.log(bothStringsIncluded("Question?", "tion", "?"));                //=> true
-// console.log(bothStringsIncluded("I love programming", "apple", "potato")); //=> false
+console.log(bothStringsIncluded("how now brown cow?", "panther", "cow"));  //=> false
+console.log(bothStringsIncluded("Dance party!", "Dance", "party"));        //=> true
+console.log(bothStringsIncluded("Question?", "tion", "?"));                //=> true
+console.log(bothStringsIncluded("I love programming", "apple", "potato")); //=> false
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = bothStringsIncluded;

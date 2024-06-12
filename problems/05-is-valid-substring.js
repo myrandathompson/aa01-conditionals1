@@ -4,7 +4,16 @@ function should return a string of "VALID" if the second string is part of the
 first string regardless of the casing of the characters. Otherwise it should
 return "INVALID".
 */
+function isValidSubStr(str1, str2) {
+    const strLower1 = str1.toLowerCase()
+    const strLower2 = str2.toLowerCase()
 
+    if (strLower1.includes(strLower2)) {
+        return "VALID"
+    } else {
+        return "INVALID"
+    }
+}
 // Your code here 
 
 // console.log(isValidSubStr("JOY", "joy"));                     // => 'VALID'
